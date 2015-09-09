@@ -327,4 +327,20 @@ android:textSize="24sp" />
 
 <TextView
 android:id="@+id/omoju_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_above="@id/jennie_text_view"
+android:text="OMOJU"
+android:textSize="24sp" />
 
+<TextView
+android:id="@+id/amy_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_alignParentRight="true"
+android:layout_above="@id/omoju_text_view"
+android:text="AMY"
+android:texxtSize="24sp" />
+
+</RelativeLayout>
