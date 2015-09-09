@@ -2,83 +2,94 @@
 
 ##TEXTVIEW:													
 
+
 ```xml
 <TextView
 android:text="Hello Swetha"
 android:layout_height="100dp"/>
 ```
-																							
-/*
+
   dp:density independent pixel
   sp:scale independent pixel
   textSize or textAppearance can be small,medium or large
-*/ 
-																							
+
+
+```xml																							
 <TextView																					 
 android:text="hi this is vijayalakshmi. i hail from vizag"
 android:layout_height="wrap_content"
 android:layout_width="wrap_content"
 android:textSize="45sp"/>
+```
 
 or
 
+
+```xml
 <TextView																					 
 android:text="hi this is vijayalakshmi. i hail from vizag"
 android:background:"@android:color/darker_gray"
 android:layout_height="wrap_content"
 android:layout_width="wrap_content"
 android:textAppearance="?android:textAppearanceLarge"/>
+```
 
-/*
 in android text colors are limited so we can't access many colors for that reason we are using a new technique
-*/
 
+
+```xml
 android:background:"@android:color/darker_gray"
+```
 or
+```xml
 android:background="#2196F3"(blue color)
 android:textColor="#AED581"(green color text on blue background)
+```
 
+##IMAGEVIEW
 
-IMAGEVIEW
-
+```xml
 <ImageView
 android:src="@drawable/cake"
 android:layout_height="wrap_content"
 android:layout_width="wrap_content"
 android:scaleType="centerCrop"/>
+```
 
-/* 
 "drawable" is the name of the folder and "cake" is the image stored in drawable folder. we need not have to mention the extension of the image i.e;jpg or png or jpeg etc;"@" refers to "resource" and "drawable" refers to "resource name or resource type" 
 "centerCrop" means we are fitting the image to edge to edge without breaking the image i.e; any kind of large image can't fit due to its larger size but we are adjusting its dimensions and fixing through the screen size.
 
+#XML ATTRIBUTES
 
-													XML ATTRIBUTES
+##TEXT ALL CAPS
 
-TEXT ALL CAPS
+```xml
 <TextView
 android:text="hi this is vijayalakshmi"
 android:layout_height="wrap_content"					/* HI THIS IS VIJAYALAKSHMI */
 android:layout_width="wrap_content"
 android:textAllCaps="true"/>
-
 <TextView
 android:text="hi this is vijayalakshmi"
 android:layout_height="wrap_content"					/* hi this is vijayalakshmi */
 android:layout_width="wrap_content"
 android:textAllCaps="false"/>
+```
 
+##TEXT STYLE
 
-TEXT STYLE
+```xml
 <TextView
 android:text="swetha"
 android:layout_height="wrap_content"
 android:layout_width="wrap_content"
 android:textStyle="bold"/>
+```
 
+#LINEAR LAYOUT
 
-LINEAR LAYOUT
-
-<Linearlayout
+```xml
+<LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:orientation="vertical"
 android:layout_height="wrap_content"
@@ -93,10 +104,10 @@ android:layout_width="wrap_content"/>
 android:text="Kunal"
 android:layout_height="wrap_content"
 android:layout_width="wrap_content"/>
-
 </LinearLayout>
+```
 
-
+```xml
 <LinearLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:orientation="vertical"
@@ -126,10 +137,11 @@ android:background="#4CAF50"
 android:textSize="24sp" />
 
 </Linearlayout>
+```
 
+##LINEAR WEIGHT
 
-LINEAR WEIGHT
-
+```xml
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -162,8 +174,9 @@ LINEAR WEIGHT
         android:textSize="24sp" />
 
 </LinearLayout>
+```
 
-
+```xml
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
@@ -196,11 +209,13 @@ LINEAR WEIGHT
         android:background="#009688" />
 
 </LinearLayout>
+```
 
+#RELATIVE LAYOUT
 
+##RELATIVE LAYOUT  TO PARENTS
 
-RELATIVE LAYOUT  TO PARENTS
-
+```xml
 <RelativeLayout
 xmlns:android="http://schemas.android.com/apk/ress/android"
 android:layout_width="match_parent"
@@ -237,9 +252,11 @@ android:layout_alignParentTop="true"
 android:layout_alignParentRight="true" />
 
 </RelativeLayout>
+```
 
-RELATIVE LAYOUT TO OTHER VIEWS	
+##RELATIVE LAYOUT TO OTHER VIEWS
 
+```xml
 <RelativeLayout
 xmlns:android="http://schemaas.android.com/apk/res/android"
 android:layout_width="match_parent"
