@@ -1,10 +1,12 @@
-VIEWS
+#VIEWS
 
-TEXTVIEW:													
+##TEXTVIEW:													
 
+```xml
 <TextView
 android:text="Hello Swetha"
 android:layout_height="100dp"/>
+```
 																							
 /*
   dp:density independent pixel
