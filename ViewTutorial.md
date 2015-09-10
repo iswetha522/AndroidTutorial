@@ -344,12 +344,11 @@ android:text="AMY"
 android:texxtSize="24sp" />
 
 </RelativeLayout>
-...
+```
 
 ##RELATIVE LAYOUT WITH LIST ITEMS
 
-...xml
-
+```xml
 <RelativeLayout
 xmlns:android="http://schemas.android.com/apk/res/android"
 android:layout_width="match_parent"
@@ -390,5 +389,5 @@ android:text="10 MILES AWAY"
 android:textAppearance="?android:textAppearanceSmall" />
 
 </RelativeLayout   >
-... 
+```
 
