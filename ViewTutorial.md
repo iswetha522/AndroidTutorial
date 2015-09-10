@@ -344,3 +344,51 @@ android:text="AMY"
 android:texxtSize="24sp" />
 
 </RelativeLayout>
+...
+
+##RELATIVE LAYOUT WITH LIST ITEMS
+
+...xml
+
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<ImageView
+android:id="@+id/photo_image_view"
+android:layout_width="56dp"
+android:layout_height="56dp"
+android:src="@drawable/ocean"
+android:scaleType="centerCrop" />
+
+<TextView
+android:id="@+id/pebble_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/photo_image_view"
+android:text="PEBBLE BEACH"
+android:textAppearance="?android:textAppearanceMedium" />
+
+<TextView
+android:id="@+id/california_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightOf="@id/photo_image_view
+"
+android:layout_below="@id/pebble_text_view"
+android:text="CALIFORNIA"
+android:textAppearance="?android:textAppearanceSmall" />
+
+<TextView
+android:id="@+id/miles_text_view"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_toRightof="@id/photo_image_view"
+android:layout_below="@id/california_text_view"
+android:text="10 MILES AWAY"
+android:textAppearance="?android:textAppearanceSmall" />
+
+</RelativeLayout   >
+... 
+
